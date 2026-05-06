@@ -9,8 +9,8 @@ pipeline{
     stage('Build'){
     steps{
 	 sh 'docker build -t santa-app .'
-	}
-   
+	 }
+    }
   
   }
  } 

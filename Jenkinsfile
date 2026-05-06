@@ -44,7 +44,13 @@ pipeline{
 	      steps{
 	        sh 'docker push $ACR_LOGIN_SERVER/${IMAGE_NAME}:${TAG}'
 	    }
-	   }	 
+	   }
+  stage('Deploy app to k8s'){
+   steps{
+    sh 'kubectl apply -f deployment.yml'
+   }
+  
+  }	   
   
  } 
 

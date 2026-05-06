@@ -20,7 +20,7 @@ spec:
     - name: santa
       image: devopsproject1.azurecr.io/santa-app:latest
       ports:
-	   - containerPort: 80
+	      - containerPort: 80
 	
 ---
 apiVersion: v1
